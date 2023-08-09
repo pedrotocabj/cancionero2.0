@@ -1,0 +1,24 @@
+<p>tabs works!</p>
+<div id="container">
+  <div
+    class="tab"
+    (click)="navegar('inicio')"
+    [ngClass]="{ seleccionado: seleccionado[0] }"
+  >
+  <i class="fa-solid fa-house" attr.style="{{seleccionado[0] ? 'color: #2196f3;' : 'color:#000000'}}"></i>
+  </div>
+  <div
+    class="tab"
+    (click)="navegar('canciones')"
+    [ngClass]="{ seleccionado: seleccionado[1] }"
+  >
+  <i class="fa-solid fa-music" attr.style="{{seleccionado[1] ? 'color: #2196f3;' : 'color:#000000'}}"></i>
+  </div>
+  <div
+    class="tab"
+    (click)="navegar('perfil')"
+    [ngClass]="{ seleccionado: seleccionado[2] }"
+  >
+  <i class="fa-solid fa-user" attr.style="{{seleccionado[2] ? 'color: #2196f3;' : 'color:#000000'}}" ></i>
+  </div>
+</div>

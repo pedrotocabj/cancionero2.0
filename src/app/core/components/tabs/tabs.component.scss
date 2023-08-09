@@ -1,0 +1,27 @@
+#container{
+    display: flex;
+
+    justify-content: space-around;
+    background-color: rgb(225, 225, 225);
+    overflow: hidden;
+    height: 60px;
+}
+
+.tab{
+    flex: 1;
+justify-content: center;
+display: flex;
+align-items: center;
+font-size: x-large;
+svg{
+    display: block;
+    margin: auto;
+}
+}
+
+
+
+.seleccionado{
+    transition: 300ms;
+background-color: rgb(186, 186, 186);
+}
